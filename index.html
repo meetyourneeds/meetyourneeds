@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Your Needs - Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://i.ibb.co/7YqdSFG/unnamed.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed; 
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: rgba(255, 215, 0, 0.8); /* Semi-transparent gold background */
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em; /* Smaller font size for mobile responsiveness */
+        }
+
+        .logo-container {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 40px;
+            margin-top: 40px;
+        }
+
+        .logo-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 150px;
+            background-color: black;
+            border: 2px solid gold;
+            border-radius: 10px;
+            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+    
+        .logo-box:hover {
+            transform: scale(1.1);
+            background-color: gold; /* Highlight with golden color on hover */
+            box-shadow: 0 0 15px 5px white; /* Add white shadow effect */
+        }
+
+        .logo-box img {
+            width: 80%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        
+        .content {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .content h2 {
+            font-size: 2em; 
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 1.1em; 
+            margin: 10px 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #121212;
+            color: gold;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+
+       
+        @media (max-width: 768px) {
+            .logo-box {
+                width: 120px;
+                height: 120px;
+            }
+
+            .logo-container {
+                padding: 20px;
+                gap: 15px;
+            }
+
+            .content {
+                padding: 30px;
+            }
+
+            .content h2 {
+                font-size: 1.8em;
+            }
+
+            .content p {
+                font-size: 1em;
+            }
+
+            header h1 {
+                font-size: 2.5em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo-box {
+                width: 100px;
+                height: 100px;
+            }
+
+            .logo-container {
+                gap: 10px;
+            }
+
+            .content h2 {
+                font-size: 1.5em;
+            }
+
+            .content p {
+                font-size: 0.9em;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meet Your Needs</h1>
+    </header>
+
+    <div class="content">
+        <h2>Explore Our Featured Platforms</h2>
+        <p>Click on the logos below to visit Instagram, Daraz, and Facebook.</p>
+    </div>
+
+    <div class="logo-container">
+        <!-- Instagram Logo -->
+        <a href="https://www.instagram.com" target="_blank" class="logo-box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+        </a>
+
+        <!-- Daraz Logo -->
+        <a href="https://www.daraz.pk" target="_blank" class="logo-box">
+            <img src="https://i.ibb.co/ZxX6d2W/Daraz-Group-of-Logos-03.png" alt="Daraz Logo">
+        </a>
+
+        <!-- Facebook Logo -->
+        <a href="https://www.facebook.com" target="_blank" class="logo-box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo">
+        </a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Meet Your Needs. All rights reserved.</p>
+    </footer>
+</body>
+</html>
