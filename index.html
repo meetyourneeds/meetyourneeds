@@ -90,6 +90,7 @@
             bottom: 0;
         }
 
+        /* Responsive Design */
         @media (max-width: 768px) {
             .logo-box {
                 width: 120px;
@@ -99,6 +100,8 @@
             .logo-container {
                 padding: 20px;
                 gap: 15px;
+                flex-direction: column;  /* Stack logos vertically on smaller screens */
+                align-items: center;  /* Center logos horizontally */
             }
 
             .content {
@@ -126,6 +129,8 @@
 
             .logo-container {
                 gap: 10px;
+                flex-direction: column;  /* Stack logos vertically on mobile */
+                align-items: center;  /* Center logos horizontally */
             }
 
             .content h2 {
